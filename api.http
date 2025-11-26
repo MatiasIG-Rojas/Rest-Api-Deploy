@@ -1,0 +1,33 @@
+### Recuperar todas las peliculas
+GET http://localhost:3000/movies
+
+### Recuperar una pelicula por ID
+GET http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+
+### Recuperar peliculas por genero
+GET http://localhost:3000/movies?genre=Sci-Fi
+
+### Crear una pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "The Godfather",
+  "year": 1972,
+  "director": "Francis Ford Coppola",
+  "duration": 175,
+  "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+  "genre": [
+    "Crime",
+    "Drama"
+  ],
+  "rate": 9.2
+}
+
+### Actualizar una pelicula
+PATCH http://localhost:3000/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+Content-Type: application/json
+
+{
+  "year": 2002
+}
