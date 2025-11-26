@@ -2,10 +2,10 @@
 GET http://localhost:3000/movies
 
 ### Recuperar una pelicula por ID
-GET http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+GET http://localhost:3000/movies/a89c386e-cb06-11f0-99e3-a2aa5b933c49
 
 ### Recuperar peliculas por genero
-GET http://localhost:3000/movies?genre=Sci-Fi
+GET http://localhost:3000/movies?genre=Action
 
 ### Crear una pelicula
 POST http://localhost:3000/movies
@@ -24,10 +24,14 @@ Content-Type: application/json
   "rate": 9.2
 }
 
+### Eliminar una pelicula
+DELETE http://localhost:3000/movies/4553e907-cb07-11f0-99e3-a2aa5b933c49
+
 ### Actualizar una pelicula
-PATCH http://localhost:3000/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+PATCH http://localhost:3000/movies/a89c386e-cb06-11f0-99e3-a2aa5b933c49
 Content-Type: application/json
 
 {
-  "year": 2002
+  "year": 2010,
+  "rate": 9.0
 }
