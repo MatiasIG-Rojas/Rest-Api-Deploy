@@ -4,7 +4,8 @@ const ACCEPTED_ORIGINS = [
     'http://localhost:8080',
     'http://localhost:3000',
     'https://movies.com',
-    'https://midu.dev'
+    'https://midu.dev',
+    'calm-respect-deploy-api-with-mysql.up.railway.app'
 ]
 
 export const corsMiddleware = ({acceptedOrigins = ACCEPTED_ORIGINS} = {}) => cors({
